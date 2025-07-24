@@ -152,13 +152,18 @@ nav ul{
 }
 .section2-container{
     display: flex;
-    gap: 100px;
+    gap: 15px;
 }
 .section2-title {
     font-weight: 800;
     font-size: 3.125rem;
 
 }
+.section2-des{
+    width: 576px;
+    height: 610px;
+}
+
 .section2-para 
 {
     font-weight: 400;
@@ -168,15 +173,103 @@ nav ul{
     padding: 10px;
     border-radius: 50px;
     filter: brightness(0.7);
+   
 }
 
 .section3-img-container{
     display: flex;
     padding: 130px;
+    gap: 30px;
+    position: relative;
+
+}
    
+.zaboinfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-10%, -40%);
+    font-weight: 800;
+    font-size: 2rem;
+    
+}
+.shop{
+    text-decoration: underline;
+    color: white;
+}
+
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-box{
+  position: relative;
+  width: 100%;
+overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+}
+
+.bloom-info , .ana-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
-}
+
 footer{
     max-width: 1440px;
     margin: 0 auto;
@@ -197,11 +290,20 @@ footer{
 .secondhalf , .halfdiv1 , .socials img{
     cursor: pointer;
 }
+   .btn-primary{
+   width: 286px;
+   height: 286px;
+    border-radius: 50%;
+    border: none;
+    margin-left: -230px;
+    margin-top: -140px;
+    cursor: pointer
+   }
 
 
 
 @media screen and (max-width: 576px) {
-    
+
     .banner-intro{
         margin-left: 130px;
       justify-items: center;
@@ -219,17 +321,16 @@ footer{
         justify-items: center;
       margin-left: 170px;
     }
-   
     .shop,
     .us,
     .home{
-        visibility: hidden;
+       visibility: hidden;
     }
     .nav ul{
         gap: 20px;
     }
 
-    .s1-title , .s1-paragraph , .section3-greet{
+    .s1-title , .s1-paragraph , .section3-greet , .section2-des{
         text-align: center;
         justify-items: center;
     }
@@ -241,6 +342,9 @@ footer{
         max-width: 100%;
     margin: 0 auto;
     }
+    .btn-primary{
+     display: none;
+    }
   
     .img-container{
  
@@ -248,20 +352,56 @@ footer{
     
         justify-items: center;
     }
-    .section2-container , .section3-img-container{
+    .section2-container{
         flex-direction: column;
         justify-items: center;
     }
-  .zabo{
-    width: 387px;
-    height: 222px;
+  .zabo , .ana , .bloom{
+   width: 100%;
   }
 footer{
     flex-direction: column;
-    gap: 5px;
+    gap: 0px;
     margin: 20px;
 }   
+.section3-img-container {
+    flex-direction: column;
+    padding: 10px;
+  justify-items: center;
 
 
+  }
+
+  .bloom-info,
+  .ana-info
+  
+  {
+    
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+    z-index: 2;
+  }
+  .zaboinfo{
+   
+    transform: translate(-50%, 120%);
+    font-size: 1rem;
+
+    /* padding: 0 10px; */
+  
+  }
+
+  .shop {
+    font-size: 0.85rem;
+  }
+
+  .image-box img,
+  .zabo {
+    padding: 0;
+    border-radius: 16px;
+  }
 }
+
+
+
+
 
