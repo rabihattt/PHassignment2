@@ -15,7 +15,7 @@
   font-style: normal;
 }
 body{
-    max-width: 1440px;
+   
     background-color: rgb(244, 250, 255);
 }
 .light-grey{
@@ -77,12 +77,12 @@ nav ul{
   margin-left: 0px;
 
 }
-.section1{
+.section1 {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 150px;
 }
-.s1-title{
+.s1-title , .section3-title {
     font-weight: 800;
     font-size: 3.125rem;
     display: flex;
@@ -91,7 +91,7 @@ nav ul{
     gap: 10px;
     margin-bottom: 10px;
 }
-.s1-paragraph{
+.s1-paragraph , .section3-para{
   text-align: center;
     font-weight: 400;
     font-size: 1.375rem;
@@ -130,6 +130,40 @@ nav ul{
     font-size: 1rem;
     font-weight: 500;
 }
+.section2 , .section3{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 172px;
+}
+.section2-container{
+    display: flex;
+    gap: 100px;
+}
+.section2-title , {
+    font-weight: 800;
+    font-size: 3.125rem;
+
+}
+.section2-para 
+{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.bloom , .ana , .zabo{
+    padding: 10px;
+    border-radius: 50px;
+    filter: brightness(0.7);
+}
+
+.section3-img-container{
+    display: flex;
+    padding: 130px;
+   
+
+  
+}
+
+
 
 @media screen and (max-width: 576px) {
     
@@ -149,9 +183,9 @@ nav ul{
     .hero{
         width:100%;
     }
-    .s1-title , .s1-paragraph{
+    .s1-title , .s1-paragraph , .section3-greet{
         text-align: center;
-        margin-left: 80px;
+        margin-left: 70px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -165,11 +199,18 @@ nav ul{
     margin: 0 auto;
     }
   
-    .img-container{
+    .img-container ,.section3-img-container{
         width: 100%;
         grid-template-columns: repeat(2 , 1fr);
         gap: 5px;
     }
+    .section2-container , .section3-img-container{
+        flex-direction: column;
+    }
+  .zabo{
+    width: 387px;
+    height: 222px;
+  }
    
 }
 
