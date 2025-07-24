@@ -56,12 +56,8 @@ nav ul{
   width: 16px; 
   height: 16px;
 }
-.banner{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 221px;
-}
+
+
 .fresh{
     color: #E95A08;
 }
@@ -70,11 +66,30 @@ nav ul{
     font-size: 4rem;
   
 }
+.banner-intro{
+    width: 570px;
+    height: 300px;
+}
+.banner-img{
+    width: 570px;
+    height: 355px;
+}
+.hero{
+    width: 100%;
+    }
+    .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 221px;
+    gap: 300px;
+    }
 
 .banner-des{
     font-size: 1.3rem;
   margin: 50px;
   margin-left: 0px;
+  margin-top: 10px;
 
 }
 .section1 {
@@ -139,7 +154,7 @@ nav ul{
     display: flex;
     gap: 100px;
 }
-.section2-title , {
+.section2-title {
     font-weight: 800;
     font-size: 3.125rem;
 
@@ -167,45 +182,61 @@ nav ul{
 
 @media screen and (max-width: 576px) {
     
-    header{
-        margin-left: 80px;
-        align-items: center;
+    .banner-intro{
+        margin-left: 130px;
+      justify-items: center;
+      margin-top: -340px;
+    
     }
+    .banner-des{
+        margin-top: -50px;
+        margin-left: 40px
+    }
+    .section3-para{
+        margin-left: 150px;
+    }
+    .sec1-intro , .section3-title{
+        justify-items: center;
+      margin-left: 170px;
+    }
+    /* body{
+        max-width: 576px;
+        margin: 0 auto;
+        margin-left: 50px;
+ 
+       
+    }  */
     .shop,
     .us,
     .home{
         visibility: hidden;
     }
     .nav ul{
-        gap: 0px;
-        justify-content: flex-end;
-    } 
-    .hero{
-        width:100%;
+        gap: 20px;
     }
+
     .s1-title , .s1-paragraph , .section3-greet{
         text-align: center;
-        margin-left: 70px;
+        justify-items: center;
     }
     .banner{
         flex-direction: column-reverse;
         align-items: center;
-    }
-    .hero{
-        width: 100%;
     }
     .section1{
         max-width: 100%;
     margin: 0 auto;
     }
   
-    .img-container ,.section3-img-container{
-        width: 100%;
+    .img-container{
+ 
         grid-template-columns: repeat(2 , 1fr);
-        gap: 5px;
+    
+        justify-items: center;
     }
     .section2-container , .section3-img-container{
         flex-direction: column;
+        justify-items: center;
     }
   .zabo{
     width: 387px;
