@@ -16,7 +16,7 @@
 }
 body{
    
-    background-color: rgb(244, 250, 255);
+    background-color: #F5F8FF;
 }
 .light-grey{
     color: #8987A1;
@@ -92,11 +92,12 @@ nav ul{
   margin-top: 10px;
 
 }
-.section1 {
+.section1{
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 150px;
 }
+
 .s1-title , .section3-title {
     font-weight: 800;
     font-size: 3.125rem;
@@ -121,7 +122,7 @@ nav ul{
     width: 100%;
     margin: none;
     text-align: center;
-    /* border: 2px solid black; */
+
 }
 .img-content{
     width: 100%;
@@ -136,7 +137,7 @@ nav ul{
     font-weight: 800;
     font-size: 1.25rem;
 }
-.img-container button{
+.img-container button , .sec4button{
     background-color: #E95A08;
     color: white;
     width: 270px;
@@ -144,6 +145,7 @@ nav ul{
     border: none;
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .section2 , .section3{
     max-width: 1440px;
@@ -160,8 +162,10 @@ nav ul{
 
 }
 .section2-des{
-    width: 576px;
+    width: 578px;
     height: 610px;
+
+    
 }
 
 .section2-para 
@@ -230,46 +234,38 @@ overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   margin-top: 5px;
 }
+.section4{
+     background-image: url('news-letter-bg.png'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      max-width: 1440px;
+      height: 530px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   margin-bottom: 50px;
+      text-align: center;
+      color: white;
+}
+.sec4-greet{
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+ }
+ .sec4button{
+    width: 180px;
+    height: 50px;
+ }
+ .subscribe-form input{
+    width: 640px;
+    height: 42px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
   
-
+   
 footer{
     max-width: 1440px;
     margin: 0 auto;
@@ -385,8 +381,6 @@ footer{
    
     transform: translate(-50%, 120%);
     font-size: 1rem;
-
-    /* padding: 0 10px; */
   
   }
 
@@ -399,6 +393,12 @@ footer{
     padding: 0;
     border-radius: 16px;
   }
+
+   .subscribe-form input{
+    width: 218px;
+    height: 50px;
+   }
+ 
 }
 
 
