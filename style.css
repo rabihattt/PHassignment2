@@ -63,18 +63,13 @@ nav ul{
 }
 .banner-heading{
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
   
 }
 .banner-intro{
-    width: 570px;
-    height: 300px;
+    width: 100%;
 }
 .banner-img{
-    width: 570px;
-    height: 355px;
-}
-.hero{
     width: 100%;
     }
     .banner{
@@ -122,9 +117,10 @@ nav ul{
     width: 100%;
     margin: none;
     text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 
 }
-.img-content{
+.img-content , .flower-store{
     width: 100%;
 }
 .img-para{
@@ -146,6 +142,7 @@ nav ul{
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 .section2 , .section3{
     max-width: 1440px;
@@ -176,7 +173,7 @@ nav ul{
 .bloom , .ana , .zabo{
     padding: 10px;
     border-radius: 50px;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
    
 }
 
@@ -264,6 +261,7 @@ overflow: hidden;
     height: 42px;
 
  }
+ 
   
    
 footer{
@@ -300,22 +298,15 @@ footer{
 
 @media screen and (max-width: 576px) {
 
-    .banner-intro{
-        margin-left: 130px;
-      justify-items: center;
-      margin-top: -340px;
-    
-    }
-    .banner-des{
-        margin-top: -50px;
-        margin-left: 40px
-    }
+   
     .section3-para{
         margin-left: 150px;
     }
     .sec1-intro , .section3-title{
+        max-width: 100%;
         justify-items: center;
-      margin-left: 170px;
+        text-align: center;
+        margin-left: 150px;
     }
     .shop,
     .us,
@@ -323,7 +314,7 @@ footer{
        visibility: hidden;
     }
     .nav ul{
-        gap: 20px;
+        gap: 50px;
     }
 
     .s1-title , .s1-paragraph , .section3-greet , .section2-des{
@@ -333,6 +324,7 @@ footer{
     .banner{
         flex-direction: column-reverse;
         align-items: center;
+        gap: 10px;
     }
     .section1{
         max-width: 100%;
@@ -348,6 +340,10 @@ footer{
     
         justify-items: center;
     }
+    
+    .br-tag{
+        display: none;
+    }
     .section2-container{
         flex-direction: column;
         justify-items: center;
@@ -355,12 +351,7 @@ footer{
   .zabo , .ana , .bloom{
    width: 100%;
   }
-footer{
-    flex-direction: column;
-    gap: 0px;
-    margin: 20px;
-}   
-.section3-img-container {
+  .section3-img-container {
     flex-direction: column;
     padding: 10px;
   justify-items: center;
@@ -398,6 +389,12 @@ footer{
     width: 218px;
     height: 50px;
    }
+footer{
+    flex-direction: column;
+    gap: 0px;
+    margin: 20px;
+}   
+
  
 }
 
